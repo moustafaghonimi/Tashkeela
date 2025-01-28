@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:tashkeela/core/database/cache/cache_helper.dart';
 import 'package:tashkeela/core/routes/custome_routs.dart';
 import 'package:tashkeela/core/services/serviese_locator.dart';
@@ -20,9 +21,11 @@ class _SplachViewState extends State<SplachView> {
     super.initState();
     bool isFirstTime =
         getIt<CacheHelper>().getData(key: 'isFirestTime') ?? false;
+
     if (isFirstTime == true) {
-      dalayNavigate(context, 'SignInView');
-      // dalayNavigate(context, 'SearchView');
+      Supabase.instance.client.auth.currentUser != null
+          ? dalayNavigate(context, 'AnimatedPage')
+          : dalayNavigate(context, 'SignInView');
     } else {
       dalayNavigate(context, 'onbording');
     }

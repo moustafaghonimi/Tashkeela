@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tashkeela/core/routes/custome_routs.dart';
 import 'package:tashkeela/core/utils/app_assets.dart';
 import 'package:tashkeela/core/utils/app_strings.dart';
 import 'package:tashkeela/core/utils/app_text_them.dart';
+import 'package:tashkeela/main.dart';
 
 class HomePageAppBarAndHero extends StatelessWidget {
   const HomePageAppBarAndHero({super.key});
@@ -14,7 +16,12 @@ class HomePageAppBarAndHero extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
+          IconButton(
+              onPressed: () async {
+                await supabase.auth.signOut();
+                customNavigationRoutrReplasment(context, 'SignInView');
+              },
+              icon: Icon(Icons.menu)),
           SizedBox(
             child: Text(
                 textAlign: TextAlign.center,

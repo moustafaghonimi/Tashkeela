@@ -1,4 +1,3 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:tashkeela/core/utils/app_text_them.dart';
 

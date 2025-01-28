@@ -39,10 +39,14 @@ class HistoryBodyItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: Stack(alignment: Alignment.center, children: [
-        Image.asset(
-          data[index]['image']!,
-          fit: BoxFit.cover,
-          colorBlendMode: BlendMode.dstOver,
+        ColorFiltered(
+          colorFilter:
+              const ColorFilter.mode(Colors.black26, BlendMode.dstATop),
+          child: Image.asset(
+            data[index]['image']!,
+            fit: BoxFit.cover,
+            colorBlendMode: BlendMode.dstOver,
+          ),
         ),
         Column(mainAxisAlignment: MainAxisAlignment.end, children: [
           Text(data[index]['name']!,

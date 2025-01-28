@@ -28,11 +28,25 @@ class AppStrings {
   static const String email = 'الايميل';
   static const String haveAnAccount = 'طب لو عندك حســـاب ؟  ';
   static const String signInAtSignUpScreen = 'ادخل عليه من هنــا  ';
+  static const String passwordNotMatch = 'الاتنين باسورد مختلفين 🤦‍♂️ ';
+  static const String passwordShort = 'الباسورد قصير جداَ 😅';
+  static const String emailNotValid = 'الايميل مش صحيح 🤔';
+  static const String phoneNotValid = 'الرقم مش صحيح 🤔';
+  static const String nameNotValid = 'الاسم فاضى 😒 ';
+  static const String signUpScess =
+      'تم انشاء الحساب بنجاح ✔ روح الجيميل اكده بقا 😎  ';
+  static const String signUpFaild = 'للاسف فى مشكله حاول تانى 😢  ';
+  static const String emailAlreadyRegistered = 'الايميل ده مسجل بالفعل 🤷‍♂️';
 
 //-------- sign in ----------
   static const String signInTopBarTxt = 'اهلاَ بيك يا صديقى فى \n التشكيلة';
   static const String signIn = 'سجل الدخول 😍';
   static const String dontHaveAnAccount = 'لو مش عندك حســـاب ؟ نعمل حساب 😊';
+  static const String passwordNotValid = 'الباسورد قصير جداَ 😅';
+  static const String signInFaild =
+      ' اتاكد من الايميل والباسورد \n او روح الجيميل شوف اكدته  😎💌🤷‍♂️  ';
+  static const String signInScess = 'تم تسجيل الدخول بنجاح 😎  ';
+  static const String signInconfirm = 'روح الجيميل اكده بقا🤦‍♂️  ';
 
   // ====== Home =========
   static const String animatePagetxt = 'ادخل التشكيلة برجلك اليمين 😁';

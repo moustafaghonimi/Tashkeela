@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tashkeela/Feathures/home/presentaion/widget/team_design_logoIn_live_match.dart';
+import 'package:tashkeela/Feathures/home/presentaion/widget/team_design_logo_in_live_match.dart';
 import 'package:tashkeela/core/utils/app_assets.dart';
 import 'package:tashkeela/core/utils/app_color.dart';
 import 'package:tashkeela/core/utils/app_text_them.dart';

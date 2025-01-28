@@ -5,9 +5,13 @@ void customNavigationRoutr(context, path) {
 }
 
 void customNavigationRoutrNamed(context, path) {
-  GoRouter.of(context).pushNamed("/$path");
+  GoRouter.of(context).goNamed("path");
 }
 
 void customNavigationRoutrReplasment(context, path) {
   GoRouter.of(context).pushReplacement('/$path');
+}
+
+void customRouterPop(context) {
+  GoRouter.of(context).pop();
 }

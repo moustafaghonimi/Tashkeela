@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tashkeela/Feathures/history_player/presentaion/view_model/player_data_model.dart';
-import 'package:tashkeela/Feathures/search/presentaion/widget/build_sesult_seaction.dart';
+import 'package:tashkeela/Feathures/search/presentaion/widget/build_result_seaction.dart';
 import 'package:tashkeela/Feathures/search/presentaion/widget/build_suggestion_seaction.dart';
 
 class MySearchDelegate extends SearchDelegate {
